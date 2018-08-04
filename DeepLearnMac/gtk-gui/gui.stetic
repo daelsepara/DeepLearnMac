@@ -5,7 +5,7 @@
   </configuration>
   <import>
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-    <widget-library name="../bin/Debug/DeepLearnMac.exe" internal="true" />
+    <widget-library name="../bin/Release/DeepLearnMac.exe" internal="true" />
   </import>
   <widget class="Gtk.Window" id="MainWindow" design-size="800 600">
     <property name="MemberName" />
@@ -495,6 +495,7 @@
                     <property name="HeightRequest">30</property>
                     <property name="IsEditable">False</property>
                     <property name="InvisibleChar">●</property>
+                    <property name="Xalign">0.5</property>
                   </widget>
                   <packing>
                     <property name="X">170</property>
@@ -517,8 +518,9 @@
                     <property name="MemberName" />
                     <property name="WidthRequest">30</property>
                     <property name="HeightRequest">30</property>
-                    <property name="IsEditable">True</property>
+                    <property name="IsEditable">False</property>
                     <property name="InvisibleChar">●</property>
+                    <property name="Xalign">0.5</property>
                   </widget>
                   <packing>
                     <property name="X">170</property>

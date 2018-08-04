@@ -539,6 +539,7 @@ public partial class MainWindow
 		this.ActivationX.Name = "ActivationX";
 		this.ActivationX.IsEditable = false;
 		this.ActivationX.InvisibleChar = '●';
+		this.ActivationX.Xalign = 0.5F;
 		this.LayoutNetwork.Add(this.ActivationX);
 		global::Gtk.Fixed.FixedChild w39 = ((global::Gtk.Fixed.FixedChild)(this.LayoutNetwork[this.ActivationX]));
 		w39.X = 170;
@@ -557,8 +558,9 @@ public partial class MainWindow
 		this.ActivationY.WidthRequest = 30;
 		this.ActivationY.HeightRequest = 30;
 		this.ActivationY.Name = "ActivationY";
-		this.ActivationY.IsEditable = true;
+		this.ActivationY.IsEditable = false;
 		this.ActivationY.InvisibleChar = '●';
+		this.ActivationY.Xalign = 0.5F;
 		this.LayoutNetwork.Add(this.ActivationY);
 		global::Gtk.Fixed.FixedChild w41 = ((global::Gtk.Fixed.FixedChild)(this.LayoutNetwork[this.ActivationY]));
 		w41.X = 170;
