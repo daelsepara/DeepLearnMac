@@ -474,7 +474,7 @@ public partial class MainWindow
 		w32.Y = 10;
 		// Container child LayoutNetwork.Gtk.Fixed+FixedChild
 		this.NetworkLayers = global::Gtk.ComboBox.NewText();
-		this.NetworkLayers.WidthRequest = 200;
+		this.NetworkLayers.WidthRequest = 210;
 		this.NetworkLayers.Name = "NetworkLayers";
 		this.LayoutNetwork.Add(this.NetworkLayers);
 		global::Gtk.Fixed.FixedChild w33 = ((global::Gtk.Fixed.FixedChild)(this.LayoutNetwork[this.NetworkLayers]));
