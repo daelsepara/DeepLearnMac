@@ -147,6 +147,7 @@ public partial class MainWindow
 		this.HeightRequest = 600;
 		this.Name = "MainWindow";
 		this.Title = global::Mono.Unix.Catalog.GetString("DeepLearnMAC (BETA)");
+		this.Icon = global::Gdk.Pixbuf.LoadFromResource("DeepLearnMac.DeepLearn.png");
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 		this.Resizable = false;
 		this.AllowGrow = false;
