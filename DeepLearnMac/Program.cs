@@ -13,7 +13,9 @@ namespace DeepLearnMac
         {
             try
             {
-                var hMutex = new System.Threading.Mutex(true, "DeepLearnMac (BETA)", out bool owned);
+				bool owned;
+
+                var hMutex = new System.Threading.Mutex(true, "DeepLearnMac (BETA)", out owned);
 
                 if (owned)
                 {
