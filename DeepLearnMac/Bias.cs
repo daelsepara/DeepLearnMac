@@ -1,4 +1,4 @@
-﻿using DeepLearnCS;
+using DeepLearnCS;
 using Gdk;
 using System;
 using System.Runtime.InteropServices;
