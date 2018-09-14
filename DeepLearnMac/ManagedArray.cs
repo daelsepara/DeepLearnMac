@@ -32,6 +32,8 @@ namespace DeepLearnCS
             MemOps.Free(Data);
 
             x = 0;
+
+	    Data = null;
         }
     }
 
@@ -197,6 +199,8 @@ namespace DeepLearnCS
             z = 0;
             i = 0;
             j = 0;
+
+	    Data = null;
         }
     }
 }
