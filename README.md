@@ -26,3 +26,7 @@ After classification, the activations of each layer are shown in the Network pag
 ## Inspiration
 
 The backend of DeepLearnMac is based on the CNN component Rasmus Berg Palm's DeepLearnToolbox (https://github.com/rasmusbergpalm/DeepLearnToolbox)
+
+# Platform
+
+DeepLearnMac software has been tested on Linux, OSX, and Windows platforms. On Linux and Windows platforms, please place the trained network values inside the folder where the main executable is located.
