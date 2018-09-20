@@ -4,7 +4,7 @@
 
 ![About DeepLearnMac](/Screenshots/MNIST.png)
 
-DeepLearnMac is a user interface for classifying hand-drawn (on a computer) digits 0-9. It utilizes a trained 6 layer convolutional neural network.
+DeepLearnMac is a user interface for classifying hand-drawn (on a computer) digits 0-9. It utilizes a trained 6 layer convolutional neural network (CNN).
 
 These layers are
 
@@ -22,3 +22,7 @@ On the Classify page, you can draw patterns on the canvas or load an image for c
 ![Visualization](/Screenshots/Visualization.png)
 
 After classification, the activations of each layer are shown in the Network page. Some layers only have activation maps. Convolution layers have feature maps the bias values. The fully connected layer (Feature Vector), the network weights and biases are also shown. Finally, the output layer from which the classification scores are derived are also rendered in this page.
+
+## Inspiration
+
+The backend of DeepLearnMac is based on the CNN component Rasmus Berg Palm's DeepLearnToolbox (https://github.com/rasmusbergpalm/DeepLearnToolbox)
