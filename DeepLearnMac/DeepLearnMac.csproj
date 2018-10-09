@@ -43,9 +43,6 @@
       <SpecificVersion>False</SpecificVersion>
       <Package>glib-sharp-2.0</Package>
     </Reference>
-    <Reference Include="glade-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="pango-sharp, Version=2.4.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
       <SpecificVersion>False</SpecificVersion>
       <Package>gtk-sharp-2.0</Package>
@@ -55,6 +52,9 @@
       <Package>gtk-sharp-2.0</Package>
     </Reference>
     <Reference Include="Mono.Posix" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
@@ -85,6 +85,13 @@
     <Compile Include="FullyConnected.cs" />
     <Compile Include="Feature.cs" />
     <Compile Include="Bias.cs" />
+    <Compile Include="ManagedNN.cs" />
+    <Compile Include="ModelJSON.cs" />
+    <Compile Include="NeuralNetworkOptions.cs" />
+    <Compile Include="Optimize.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
