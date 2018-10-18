@@ -17,7 +17,7 @@ public static class Classify
         cnn.FeedForward(Transposed);
 
         digit = 0;
-		double max = double.MinValue;
+        double max = double.MinValue;
 
         for (int y = 0; y < cnn.Output.y; y++)
         {
@@ -61,7 +61,7 @@ public static class Classify
                         b = Marshal.ReadByte(offset, 2);
                     }
 
-					digit[x, y] = (r * 299 + g * 587 + b * 114) / (255000);
+                    digit[x, y] = (r * 299 + g * 587 + b * 114) / (255000);
                 }
             }
         }

@@ -7,7 +7,7 @@ public static class Activation
 {
     public static Pixbuf Get(ManagedCNN cnn, int layer, int map)
     {
-        if (layer >= 0 && layer < cnn.Layers.Count && map >=0 && map < cnn.Layers[layer].Activation.i)
+        if (layer >= 0 && layer < cnn.Layers.Count && map >= 0 && map < cnn.Layers[layer].Activation.i)
         {
             var Activation = new ManagedArray(cnn.Layers[layer].Activation.x, cnn.Layers[layer].Activation.y, cnn.Layers[layer].Activation.z);
             var Transposed = new ManagedArray(Activation);
@@ -17,8 +17,8 @@ public static class Activation
             ManagedMatrix.Transpose(Transposed, Activation);
 
             // Get normalization values
-			double min = Double.MaxValue;
-			double max = double.MinValue;
+            double min = Double.MaxValue;
+            double max = double.MinValue;
 
             for (int y = 0; y < Transposed.y; y++)
             {
