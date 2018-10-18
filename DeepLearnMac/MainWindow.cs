@@ -9,7 +9,7 @@ public partial class MainWindow : Gtk.Window
 	Dialog Confirm;
 
 	int Classification;
-	double[] Probability = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+	double[] Probability = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
 	ManagedCNN cnn;
 	Pixbuf Digit;

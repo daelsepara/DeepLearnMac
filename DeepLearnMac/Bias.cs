@@ -15,8 +15,8 @@ public static class Bias
             var pixbuf = new Pixbuf(Colorspace.Rgb, false, 8, Transposed.x, Transposed.y);
 
             // Get normalization values
-            var min = 1.0;
-            var max = 0.0;
+			double min = Double.MaxValue;
+			double max = Double.MinValue;
 
             FullyConnected.GetNormalization(Transposed, ref min, ref max);
 

@@ -17,8 +17,8 @@ public static class Activation
             ManagedMatrix.Transpose(Transposed, Activation);
 
             // Get normalization values
-            var min = 1.0;
-            var max = 0.0;
+			double min = Double.MaxValue;
+			double max = double.MinValue;
 
             for (int y = 0; y < Transposed.y; y++)
             {
@@ -51,7 +51,7 @@ public static class Activation
             {
                 var offset = pixbuf.Pixels + y * pixbuf.Rowstride + x * pixbuf.NChannels;
 
-                var DoubleVal = 255.0 * (Activation[x, y] - min) / (max - min);
+                var DoubleVal = 255 * (Activation[x, y] - min) / (max - min);
                 var ByteVal = Convert.ToByte(DoubleVal);
 
                 Marshal.WriteByte(offset, ByteVal);

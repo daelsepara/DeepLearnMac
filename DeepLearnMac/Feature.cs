@@ -17,8 +17,8 @@ public static class Feature
             ManagedMatrix.Transpose(Transposed, FeatureMap);
 
             // Get normalization values
-            var min = 1.0;
-            var max = 0.0;
+			double min = Double.MaxValue;
+			double max = Double.MinValue;
 
             FullyConnected.GetNormalization(Transposed, ref min, ref max);
 

@@ -13,8 +13,8 @@ public static class FullyConnected
 
             var pixbuf = new Pixbuf(Colorspace.Rgb, false, 8, Transposed.x, Transposed.y);
 
-            var min = 1.0;
-            var max = 0.0;
+			double min = Double.MaxValue;
+			double max = Double.MinValue;
 
             GetNormalization(Transposed, ref min, ref max);
 
@@ -28,8 +28,8 @@ public static class FullyConnected
         {
             var pixbuf = new Pixbuf(Colorspace.Rgb, false, 8, layer.x, layer.y);
 
-            var min = 1.0;
-            var max = 0.0;
+			double min = Double.MaxValue;
+			double max = Double.MinValue;
 
             GetNormalization(layer, ref min, ref max);
 
