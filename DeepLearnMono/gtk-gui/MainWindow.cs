@@ -147,7 +147,7 @@ public partial class MainWindow
 		this.HeightRequest = 600;
 		this.Name = "MainWindow";
 		this.Title = global::Mono.Unix.Catalog.GetString("DeepLearnMAC (BETA)");
-		this.Icon = global::Gdk.Pixbuf.LoadFromResource("DeepLearnMac.DeepLearn.png");
+		this.Icon = global::Gdk.Pixbuf.LoadFromResource("DeepLearnMono.DeepLearn.png");
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 		this.Resizable = false;
 		this.AllowGrow = false;
@@ -165,7 +165,7 @@ public partial class MainWindow
 		this.MainNotebook.HeightRequest = 480;
 		this.MainNotebook.CanFocus = true;
 		this.MainNotebook.Name = "MainNotebook";
-		this.MainNotebook.CurrentPage = 1;
+		this.MainNotebook.CurrentPage = 0;
 		// Container child MainNotebook.Gtk.Notebook+NotebookChild
 		this.LayoutClassify = new global::Gtk.Fixed();
 		this.LayoutClassify.Name = "LayoutClassify";
