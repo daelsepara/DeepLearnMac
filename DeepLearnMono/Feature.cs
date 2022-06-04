@@ -1,7 +1,5 @@
 using DeepLearnCS;
 using Gdk;
-using System;
-using System.Runtime.InteropServices;
 
 public static class Feature
 {
@@ -17,8 +15,8 @@ public static class Feature
             ManagedMatrix.Transpose(Transposed, FeatureMap);
 
             // Get normalization values
-            double min = Double.MaxValue;
-            double max = Double.MinValue;
+            double min = double.MaxValue;
+            double max = double.MinValue;
 
             FullyConnected.GetNormalization(Transposed, ref min, ref max);
 

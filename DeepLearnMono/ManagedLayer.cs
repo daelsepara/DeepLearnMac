@@ -8,7 +8,7 @@ namespace DeepLearnCS
         public int Scale;
         public int KernelSize;
 
-        public ManagedArray FeatureMap = null;     // FeatureMap[i][j][x][y]
+        public ManagedArray FeatureMap = null; // FeatureMap[i][j][x][y]
         public ManagedArray DeltaFeatureMap = null;
 
         public ManagedArray Activation = null; // Activation[i][x][y][z]

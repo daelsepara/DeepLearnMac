@@ -171,8 +171,7 @@ namespace DeepLearnCS
                 model.FeatureMap = Convert4DIJ(layer.FeatureMap);
                 model.Bias = Convert1D(layer.Bias);
             }
-
-            if (layer.Type == LayerTypes.Subsampling)
+            else if (layer.Type == LayerTypes.Subsampling)
             {
                 model.Scale = layer.Scale;
             }
@@ -238,8 +237,7 @@ namespace DeepLearnCS
                 {
                     network.Layers.Add(new ManagedLayer());
                 }
-
-                if (layer.Type == (int)LayerTypes.Convolution)
+                else if (layer.Type == (int)LayerTypes.Convolution)
                 {
                     network.Layers.Add(new ManagedLayer(layer.OutputMaps, layer.KernelSize));
 
@@ -248,8 +246,7 @@ namespace DeepLearnCS
                     network.Layers[index - 1].FeatureMap = Set(layer.FeatureMap);
                     network.Layers[index - 1].Bias = Set(layer.Bias, false);
                 }
-
-                if (layer.Type == (int)LayerTypes.Subsampling)
+                else if (layer.Type == (int)LayerTypes.Subsampling)
                 {
                     network.Layers.Add(new ManagedLayer(layer.Scale));
                 }

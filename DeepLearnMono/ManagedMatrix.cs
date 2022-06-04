@@ -160,7 +160,6 @@ namespace DeepLearnCS
             if (A.x == B.y)
             {
                 /*
-
                 // Naive version
                 result.Resize(B.x, A.y, false);
 
@@ -233,15 +232,12 @@ namespace DeepLearnCS
         {
             var result = new ManagedArray(A);
 
-            for (var x = 0; x < A.Length(); x++)
-            {
-                result[x] = A[x] * B[x];
-            }
+            Product(result, A, B);
 
             return result;
         }
 
-        // Element by element multiplication
+        // Element by element addition
         public static ManagedArray BSXADD(ManagedArray A, ManagedArray B)
         {
             var result = new ManagedArray(A);

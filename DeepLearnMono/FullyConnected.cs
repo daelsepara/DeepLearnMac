@@ -6,15 +6,16 @@ public static class FullyConnected
 {
     public static Pixbuf Get(ManagedArray layer, bool transpose = true)
     {
+        double min = double.MaxValue;
+        double max = double.MinValue;
+
         if (transpose)
         {
             var Transposed = new ManagedArray(layer, false);
+
             ManagedMatrix.Transpose(Transposed, layer);
 
             var pixbuf = new Pixbuf(Colorspace.Rgb, false, 8, Transposed.x, Transposed.y);
-
-            double min = Double.MaxValue;
-            double max = Double.MinValue;
 
             GetNormalization(Transposed, ref min, ref max);
 
@@ -27,9 +28,6 @@ public static class FullyConnected
         else
         {
             var pixbuf = new Pixbuf(Colorspace.Rgb, false, 8, layer.x, layer.y);
-
-            double min = Double.MaxValue;
-            double max = Double.MinValue;
 
             GetNormalization(layer, ref min, ref max);
 
